@@ -1,0 +1,43 @@
+<%- include('header') %>
+
+<div class="container">
+  <div class="left-home">
+    <h1>ConvertMy<span>Money</span></h1>
+    <h3 class="subtitle">
+      Realize a conversão monetária para as principais moedas mundiais
+    </h3>
+    <form class="form" method="GET" action="/quotation">
+      <div class="selects">
+        <select name="by">
+          <option value="BRL-BRL">Real (BRL)</option>
+        </select>
+        <select name="from">
+          <option value="USD-BRL" selected="selected"
+            >Dólar Americano (USD)</option
+          >
+          <option value="GBP-BRL">Libra Esterlina (GBP)</option>
+          <option value="EUR-BRL">Euro (EUR)</option>
+          <option value="JPY-BRL">Yene (JPY)</option>
+        </select>
+      </div>
+      <input
+        required
+        type="number"
+        min="0"
+        name="quantity"
+        placeholder="Informe a quantidade monetária"
+      />
+      <button class="button-home">Converter!</button>
+    </form>
+  </div>
+  <div
+    class="right-home"
+    style="
+      background-image: url('images/back-finance.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    "
+  ></div>
+  <%- include('footer') %>
+</div>

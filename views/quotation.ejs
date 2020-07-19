@@ -1,0 +1,144 @@
+<%- include('header') %>
+<div class="container-quotation">
+  <div class="left-quotation">
+    <div class="left-quotation-container">
+      <h1 class="title-convert">
+        Conversão Concluída!
+      </h1>
+      <h3>Valor convertido de <%= titleBy %> para <%= titleFrom %></h3>
+      <div class="containerQuotation">
+        <div class="card-convert-container">
+          <div class="card-convert-header">
+            <p><%= titleBy %></p>
+            <img src="images/<%= by %>.png" alt="Brasil" />
+          </div>
+          <p><%= origin %></p>
+        </div>
+        <p>
+          <i
+            style="color: #20232a; margin: 0px 12px;"
+            class="fa fa-arrow-right fa-2x"
+            aria-hidden="true"
+          ></i>
+        </p>
+        <div class="card-convert-container">
+          <div class="card-convert-header">
+            <p><%= titleFrom %></p>
+            <img src="images/<%= from %>.png" alt="Estados Unidos" />
+          </div>
+          <p><%= convert %></p>
+        </div>
+      </div>
+      <a class="link-quotation" href="/">
+        <button class="button-quotation">
+          <i
+            class="fa fa-retweet fa-lg"
+            aria-hidden="true"
+            style="margin-right: 6px;"
+          ></i>
+          Nova conversão
+        </button>
+      </a>
+    </div>
+    <h3 class="quotation-mobile">
+      <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+    </h3>
+  </div>
+  <div class="right-quotation" style="background-color: #20232a;">
+    <h1 class="title-quotation">
+      Cotação Monetária <small><a href="/graphic">Ver Gráfico</a></small>
+    </h1>
+
+    <div class="card-code-quotation-container">
+      <div class="card-code-quotation">
+        <div class="card-code-quotation-header">
+          <p>Dólar</p>
+          <img src="images/USD-BRL.png" alt="Estados Unidos" />
+        </div>
+        <div class="card-code-quotation-main">
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= USDAverage %></span>
+          </div>
+        </div>
+        <div class="card-code-quotation-footer">
+          <div class="card-code-quotation-footer-left">
+            <span><%= USDHigh %></span>
+          </div>
+          <div class="card-code-quotation-footer-right">
+            <span><%= USDLow %></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-code-quotation">
+        <div class="card-code-quotation-header">
+          <p>Euro</p>
+          <img src="images/EUR-BRL.png" alt="Europe" />
+        </div>
+        <div class="card-code-quotation-main">
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= EURAverage %></span>
+          </div>
+        </div>
+        <div class="card-code-quotation-footer">
+          <div class="card-code-quotation-footer-left">
+            <span><%= EURHigh %></span>
+          </div>
+          <div class="card-code-quotation-footer-right">
+            <span><%= EURLow %></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-code-quotation">
+        <div class="card-code-quotation-header">
+          <p>Libra</p>
+          <img src="images/GBP-BRL.png" alt="Reino Unido" />
+        </div>
+        <div class="card-code-quotation-main">
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= GBPAverage %></span>
+          </div>
+        </div>
+        <div class="card-code-quotation-footer">
+          <div class="card-code-quotation-footer-left">
+            <span><%= GBPHigh %></span>
+          </div>
+          <div class="card-code-quotation-footer-right">
+            <span><%= GBPLow %></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-code-quotation">
+        <div class="card-code-quotation-header">
+          <p>Yene</p>
+          <img src="images/JPY-BRL.png" alt="Yene" />
+        </div>
+        <div class="card-code-quotation-main">
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= JPYAverage %></span>
+          </div>
+        </div>
+        <div class="card-code-quotation-footer">
+          <div class="card-code-quotation-footer-left">
+            <span><%= JPYHigh %></span>
+          </div>
+          <div class="card-code-quotation-footer-right">
+            <span><%= JPYLow %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('footer') %>

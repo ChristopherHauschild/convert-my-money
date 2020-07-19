@@ -1,0 +1,115 @@
+<%- include('header') %>
+<div class="container-quotation">
+  <div class="left-graphic">
+    <div class="left-graphic-container">
+      <div class="info-graphic">
+        <dl>
+          <dt>Informações sobre a API</dt>
+          <p>
+            A API de Cotações de Moedas utilizada para alimentar os dados da
+            aplicação está disponível a partir deste
+            <a
+              href="https://docs.awesomeapi.com.br/api-de-moedas"
+              target="_blank"
+              >link</a
+            >. A mesma é atualizada a cada 3 minutos.
+          </p>
+
+          <dt>Sobre a aplicação</dt>
+          <p>
+            Você pode encontrar tanto o código quanto maiores detalhes da
+            aplicação a partir deste
+            <a href="" target="_blank">link</a>.
+          </p>
+        </dl>
+      </div>
+      <div class="link-graphic-container">
+        <a class="link-graphic" href="javascript:window.history.go(-1)">
+          <button class="button-graphic">
+            <i
+              class="fa fa-reply"
+              aria-hidden="true"
+              style="margin-right: 4px;"
+            ></i>
+            Voltar
+          </button>
+        </a>
+        <a class="link-graphic" href="/">
+          <button class="button-graphic">
+            <i
+              class="fa fa-home"
+              aria-hidden="true"
+              style="margin-right: 4px;"
+            ></i>
+            Home
+          </button>
+        </a>
+      </div>
+    </div>
+    <h3 class="quotation-mobile">
+      <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+    </h3>
+  </div>
+  <div class="right-quotation" style="background-color: #20232a;">
+    <h1 class="title-graphic">
+      Gráfico de Alta Monetária
+    </h1>
+    <div class="chart-container">
+      <canvas id="myChart" style="height: 100%; width: 100%;"></canvas>
+      <script>
+        var USD = { name: "Dólar", value: "<%= USDHighNum %>" };
+        var GBP = { name: "Libra", value: "<%= GBPHighNum %>" };
+        var EUR = { name: "Euro", value: "<%= EURHighNum %>" };
+        var JPY = { name: "Yene", value: "<%= JPYHighNum %>" };
+
+        const arr = [USD, GBP, EUR, JPY].sort((a, b) => a.value - b.value);
+
+        console.log(arr);
+        const values = arr.map((it) => parseFloat(it.value));
+        const labels = arr.map((it) => it.name);
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: labels,
+            fontColor: "white",
+            datasets: [
+              {
+                data: values,
+                backgroundColor: ["rgba(190,13,255, 0.1)"],
+                borderColor: ["#efefef", "#efefef", "#efefef", "#efefef"],
+                borderWidth: 3,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              yAxes: [
+                {
+                  type: "linear",
+                  display: true,
+                  scaleLabel: {
+                    display: true,
+                    fontStyle: "bold",
+                  },
+                  ticks: {
+                    callback: function (value, index, values) {
+                      return parseFloat(value).toFixed(2);
+                    },
+                    beginAtZero: true,
+                    precision: 0.5,
+                  },
+                },
+              ],
+            },
+            legend: {
+              display: false,
+            },
+          },
+        });
+      </script>
+    </div>
+  </div>
+</div>
+<%- include('footer') %>
