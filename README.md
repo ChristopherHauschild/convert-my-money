@@ -6,7 +6,7 @@ A view engine utilizada no desenvolvimento da aplicação foi o EJS, enquanto o 
 </p> <br /><br />
 
 <div align="center">
-  <img src="https://github.com/ChristopherHauschild/convert-my-money/blob/master/CMM.PNG?raw=true" width="900px" />
+  <img src="https://github.com/ChristopherHauschild/convert-my-money/blob/master/CMM.PNG?raw=true" width="1000px" />
 </div>
 
 <hr>
