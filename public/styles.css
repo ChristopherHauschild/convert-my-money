@@ -447,7 +447,7 @@ input {
 }
 
 .info-graphic {
-  margin: 20px 50px;
+  margin: 16px 50px;
   margin-bottom: 12px;
 }
 
@@ -462,7 +462,7 @@ input {
 
 .info-graphic dl dt {
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border-bottom: 1px solid #0002;
   padding: 8px 0px;
@@ -473,7 +473,7 @@ input {
   width: 95%;
   margin: 5px;
   color: #6d6a6a;
-  line-height: 27px;
+  line-height: 26px;
   text-align: justify;
 }
 
