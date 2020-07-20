@@ -584,7 +584,8 @@ input {
   }
 
   .title-convert {
-    font-size: 2.24rem;
+    font-size: 2.14rem;
+    text-align: center;
   }
 
   .link-quotation {
@@ -615,5 +616,205 @@ input {
 
   .chart-container {
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    margin: 0px;
+  }
+
+  .container-quotation {
+    margin: 0px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+  }
+
+  .right-quotation {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .button-home {
+    width: 36%;
+  }
+
+  .containerQuotation {
+    width: 83%;
+  }
+
+  .card-convert-container {
+    width: 45%;
+  }
+
+  .title-convert {
+    font-size: 2.14rem;
+    text-align: center;
+  }
+
+  .link-quotation {
+    width: 74%;
+    margin-top: 60px;
+  }
+
+  .button-quotation {
+    padding: 10px 30px;
+    font-size: 1.25rem;
+  }
+
+  .title-quotation {
+    font-size: 2.35rem;
+  }
+
+  .title-graphic {
+    font-size: 1.8rem;
+  }
+
+  .card-code-quotation-container {
+    width: 100%;
+  }
+
+  .card-code-quotation {
+    width: 55%;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    margin: 0px;
+  }
+
+  .container-quotation {
+    margin: 0px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .right-quotation {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .form {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .button-home {
+    width: 56%;
+  }
+
+  .containerQuotation {
+    width: 83%;
+  }
+
+  .card-convert-container {
+    width: 45%;
+    font-size: 1.2rem;
+  }
+
+  .card-convert-header {
+    font-size: 1rem;
+  }
+
+  .card-convert-header img {
+    width: 28px;
+  }
+
+  .title-convert {
+    margin-top: 80px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .link-quotation {
+    width: 74%;
+    margin-top: 60px;
+  }
+
+  .button-quotation {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .title-quotation {
+    font-size: 2.35rem;
+  }
+
+  .title-graphic {
+    font-size: 1.8rem;
+  }
+
+  .card-code-quotation-container {
+    width: 100%;
+  }
+
+  .card-code-quotation {
+    width: 55%;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+  .info-graphic {
+    margin: 10px 30px;
+    margin-bottom: 0px;
+  }
+
+  .info-graphic dl dt {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid #0002;
+    padding: 8px 0px;
+    margin: 18px 0px;
+  }
+
+  .info-graphic dl p {
+    width: 95%;
+    margin: 5px;
+    color: #6d6a6a;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  .info-graphic dl p a {
+    color: #6d6a6a;
+  }
+
+  .button-graphic {
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 40px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8rem;
+    background-color: #ae54fd;
+    box-shadow: 1px 1px 2px 0px #0003;
   }
 }
