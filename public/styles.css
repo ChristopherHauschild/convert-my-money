@@ -24,8 +24,8 @@ h1 span {
   color: white;
   text-align: center;
   font-size: 2.55rem;
-  margin-top: 5px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .title-graphic {
@@ -242,7 +242,7 @@ input {
   margin: 20px;
 
   width: 28%;
-  height: 180px;
+  height: 160px;
 
   overflow: hidden;
   border-radius: 3px;
@@ -447,7 +447,8 @@ input {
 }
 
 .info-graphic {
-  margin: 40px 50px;
+  margin: 20px 50px;
+  margin-bottom: 12px;
 }
 
 .info-graphic dl {
